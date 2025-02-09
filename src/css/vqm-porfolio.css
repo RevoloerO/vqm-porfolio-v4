@@ -5,10 +5,17 @@
 :root{
   --color-background: #0d0c0b; /* Background */
   --color-primary: #131618; /* Primary */
-  --color-secondary: #6b0000; /* Secondary */
+  --color-secondary: #4b0000; /* Secondary */
   --color-accent: #FF073A; /* Accent */
   --color-text: #FBFCF6;  /* Text */
   --color-border: #67635B; /* Border */
+  /*
+  --color-background:#0A0F24;
+    --color-primary:#1A2A48;
+    --color-secondary:#2A3A68;
+    --color-accent:#00FFAB;
+    --color-text:#E0E0E0;
+    --color-border:#A0A0A0;*/
 }
 
 body{
@@ -69,6 +76,18 @@ body{
   grid-row-start: 2;
   grid-row-end: 5;
   font-size: 20px;
+}
+.color-switcher{
+  text-shadow: 1px 1px 2px var(--color-text), 0 0 1em var(--color-accent), 0 0 0.2em var(--color-accent);
+}
+.color-switcher select{
+  background-color: var(--color-background);
+  color: var(--color-accent);
+  border: none;
+  font-size: 20px;
+  font-family: "megrim", sans-serif;
+  text-shadow: 0.2px 0.2px 0.2px var(--color-accent), 0 0 0.1em var(--color-text);
+  padding: 5px;
 }
 .vqm-logo{
   margin: 0 10%;

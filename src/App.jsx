@@ -27,6 +27,7 @@ const ContactBar = () => {
       <a href="https://www.linkedin.com/in/vuong-quyen-mai/"><SiLinkedin /></a>
       <a href="https://github.com/RevoloerO"><SiGithub /></a>
       <div className="color-switcher">
+        <label htmlFor="color-palette">Theme: </label>
         <select onChange={(e) => switchColorPalette(e.target.value)}>
           <option value="default">Metal Red</option>
           <option value="blockchain-blue">Blockchain Blue</option>
@@ -53,6 +54,7 @@ const Introduction = () => (
       in MERN stack development, I possess the skills and expertise to create dynamic web applications that
       are tailored to your unique requirements. My ultimate goal is to work collaboratively with you to
       transform your ideas into reality and empower your enterprise to flourish in the digital realm. </p>
+    <a href="https://revoloero.github.io/vqm-porfolio-v3/">[[ Resume & Porfolio V3 ]]</a>
     <a href="https://revoloero.github.io/vqm-porfolio-v2/">[[ Resume & Porfolio V2 ]]</a>
     <a href="https://revoloero.github.io/vqm-countries-info/">[[ Country Info App ]]</a>
   </div>
@@ -84,7 +86,7 @@ const switchColorPalette = (palette) => {
   if (palette === 'default') {
     root.style.setProperty('--color-background', '#0d0c0b');
     root.style.setProperty('--color-primary', '#131618');
-    root.style.setProperty('--color-secondary', '#6b0000');
+    root.style.setProperty('--color-secondary', '#4b0000');
     root.style.setProperty('--color-accent', '#FF073A');
     root.style.setProperty('--color-text', '#FBFCF6');
     root.style.setProperty('--color-border', '#67635B');
