@@ -3,6 +3,7 @@ import './App.css';
 import './css/vqm-porfolio.css';
 import logo from './css/VQM-logo.png';
 import { SiGmail, SiLinkedin, SiGithub } from "react-icons/si";
+import ColorSwitcher from './ColorSwitcher'; // Import the new component
 
 const VqmLogo = () => {
   return (
@@ -26,14 +27,7 @@ const ContactBar = () => {
       <a href="mailto: vuongquyenmai@gmail.com"><SiGmail /></a>
       <a href="https://www.linkedin.com/in/vuong-quyen-mai/"><SiLinkedin /></a>
       <a href="https://github.com/RevoloerO"><SiGithub /></a>
-      <div className="color-switcher">
-        <label htmlFor="color-palette">Theme: </label>
-        <select onChange={(e) => switchColorPalette(e.target.value)}>
-          <option value="default">Metal Red</option>
-          <option value="blockchain-blue">Blockchain Blue</option>
-          <option value="divine-gold">Divine Gold</option>
-        </select>
-      </div>
+      <ColorSwitcher /> {/* Use the new component */}
     </div>
   );
 };
@@ -79,32 +73,6 @@ const Banner = () => {
       </div>
     </div>
   );
-};
-
-const switchColorPalette = (palette) => {
-  const root = document.documentElement;
-  if (palette === 'default') {
-    root.style.setProperty('--color-background', '#0d0c0b');
-    root.style.setProperty('--color-primary', '#131618');
-    root.style.setProperty('--color-secondary', '#4b0000');
-    root.style.setProperty('--color-accent', '#FF073A');
-    root.style.setProperty('--color-text', '#FBFCF6');
-    root.style.setProperty('--color-border', '#67635B');
-  } else if (palette === 'blockchain-blue') {
-    root.style.setProperty('--color-background', '#0A0F24');
-    root.style.setProperty('--color-primary', '#1A2A48');
-    root.style.setProperty('--color-secondary', '#2A3A68');
-    root.style.setProperty('--color-accent', '#00FFAB');
-    root.style.setProperty('--color-text', '#E0E0E0');
-    root.style.setProperty('--color-border', '#A0A0A0');
-  } else if (palette === 'divine-gold') {
-    root.style.setProperty('--color-background', '#1C1C1C');
-    root.style.setProperty('--color-primary', '#2E2E2E');
-    root.style.setProperty('--color-secondary', '#5A4500');
-    root.style.setProperty('--color-accent', '#FFC107');
-    root.style.setProperty('--color-text', '#FFF8DC');
-    root.style.setProperty('--color-border', '#B8860B');
-  }
 };
 
 const App = () => {
