@@ -3,12 +3,12 @@ import React from 'react';
 const switchColorPalette = (palette) => {
   const root = document.documentElement;
   if (palette === 'default') { // Softer Matcha palette as default
-    root.style.setProperty('--color-background', '#E8F0E2');
-    root.style.setProperty('--color-primary', '#D0E1C4');
-    root.style.setProperty('--color-secondary', '#A3C4A8');
-    root.style.setProperty('--color-accent', '#6B8E23');
-    root.style.setProperty('--color-text', '#4B5D3A');
-    root.style.setProperty('--color-border', '#8AAE92');
+    root.style.setProperty('--color-background', '#f0f0d8');
+    root.style.setProperty('--color-primary', '#e4f8ba');
+    root.style.setProperty('--color-secondary', '#c0d860');
+    root.style.setProperty('--color-accent', '#607848');
+    root.style.setProperty('--color-text', '#604848');
+    root.style.setProperty('--color-border', '#789048');
   } else if (palette === 'blockchain-blue') {
     root.style.setProperty('--color-background', '#0A0F24');
     root.style.setProperty('--color-primary', '#1A2A48');
