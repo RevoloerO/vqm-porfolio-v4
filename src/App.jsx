@@ -35,9 +35,9 @@ const ContactBar = () => {
 const Title = () => (
   <div className="title">
     <h1> &lt;Vuong Quyen Mai&gt;</h1>
-    <h3 id="type1"> &lt;MERN full-stack web developer&gt; </h3>
-    <h3 id="type2"> &lt;Bachelor's degree in Computer Science&gt;</h3>
-    <h4>Pursuing:  Master's degree in Information Systems</h4>
+    <h3 id="type1"> &lt; Blockchain & Full-stack Web Developer &gt; </h3>
+    <h3 id="type2"> &lt; Master's degree in Information Systems &gt;</h3>
+    <h3 id="type3"> &lt; Bachelor's degree in Computer Science &gt;</h3>
   </div>
 );
 
