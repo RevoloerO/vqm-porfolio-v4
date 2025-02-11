@@ -373,7 +373,9 @@ body {
 }
 
 @media(min-width: 769px) and (max-width: 1200px) {
-
+  .banner-welcome{
+    padding-top: 20px;
+  }
   .title h1 {
     font-size: 7vw;
   }
