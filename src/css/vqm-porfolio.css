@@ -315,6 +315,7 @@ body {
     grid-template-columns: [line1] 50% [line2] 50% [end];
     grid-template-rows: [row1] 5% [row2] 20% [row3] 15% [row4] 35% [row5] 25% [end];
   }
+  
   .banner-detail{
     border-image:
     linear-gradient(to top right,
@@ -393,7 +394,7 @@ body {
   }
 }
 
-@media(min-width: 1201px) and (max-width: 1799px) {
+@media(min-width: 1201px)  {
   .banner {
     margin: 10vh auto;
     width: 85%;
@@ -410,10 +411,7 @@ body {
 }
 
 @media(min-width: 1800px) {
-  .banner {
-    min-height: 900px;
-    margin: 0 0;
-  }
+  
 
   .banner-title {
     grid-row-start: end;
