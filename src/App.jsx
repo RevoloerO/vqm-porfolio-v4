@@ -46,11 +46,11 @@ const Title = () => (
 
 const Introduction = () => (
   <div className="introduction">
-    <p> With a strong foundation in MERN full-stack development, I have spent years building dynamic, scalable, and efficient web applications for individuals and businesses. My expertise in JavaScript, React, Node.js, and database management has allowed me to craft seamless digital experiences.
-
-    Now, I am expanding my skill set into blockchain development, focusing on Ethereum, Solidity, and Web3.js. My goal is to bridge the gap between traditional web applications and decentralized solutions, leveraging blockchain technology to enhance security, transparency, and efficiency. As I transition into this evolving space, I am dedicated to building smart contracts, DeFi applications, and NFT platforms that empower users and redefine digital interactions.
-
-    This journey represents my commitment to staying at the forefront of innovation—merging my web development expertise with blockchain to create the next generation of decentralized applications (dApps). </p>
+    <p> With a strong background in MERN full-stack development, I have built dynamic 
+      and efficient web applications. Now, I am transitioning into blockchain development,
+       focusing on Ethereum, Solidity, and Web3.js. My goal is to bridge traditional web 
+       solutions with decentralized technologies, creating secure and transparent dApps 
+       that drive innovation in the digital space </p>
     <a href={resumePDF} target="_blank" rel="noopener noreferrer">[[ Resume - January 2025 ]]</a>
     <a href="https://revoloero.github.io/vqm-porfolio-v3/">[[ Resume & Porfolio V3 ]]</a>
     <a href="https://revoloero.github.io/vqm-porfolio-v2/">[[ Resume & Porfolio V2 ]]</a>
