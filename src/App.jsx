@@ -1,7 +1,12 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import './App.css';
 import './css/vqm-porfolio.css';
-import logo from './css/VQM-logo.png';
+import logo1 from './css/VQM-logo-1.png';
+import logo2 from './css/VQM-logo-2.png';
+import logo3 from './css/vqm-logo-3.png';
+import avatar1 from './css/vqm-avatar-1.png';
+import avatar2 from './css/vqm-avatar-2.png';
+import avatar3 from './css/vqm-avatar-3.png';
 import { SiGmail, SiLinkedin, SiGithub } from "react-icons/si";
 import ColorSwitcher from './ColorSwitcher'; // Import the new component
 import resumePDF from './assets/Resume-VuongQuyenMai-Jan2025-green.pdf'; // Import the PDF file
@@ -125,6 +130,21 @@ const Introduction = () => (
 );
 
 const Banner = () => {
+  const [flipIndex, setFlipIndex] = useState(0); // 0: logo, 1: logo2, 2: avatar
+  const [animating, setAnimating] = useState(false);
+  const imgRef = useRef(null);
+
+  const images = [logo1,avatar2, logo3, avatar1 ,logo2 ,avatar3];
+
+  const handleFlip = () => {
+    if (animating) return;
+    setAnimating(true);
+    setTimeout(() => {
+      setFlipIndex(idx => (idx + 1) % images.length);
+      setTimeout(() => setAnimating(false), 300); // match animation duration
+    }, 150); // halfway through animation
+  };
+
   return (
     <div className="banner">
       <ContactBar />
@@ -139,7 +159,15 @@ const Banner = () => {
         <Introduction />
       </div>
       <div className="footer">
-        <img src={logo} alt="vqm-logo-img" id="footer-img" />
+        <img
+          src={images[flipIndex]}
+          alt="vqm-logo-img"
+          id="footer-img"
+          ref={imgRef}
+          className={animating ? "coin-flip" : ""}
+          onClick={handleFlip}
+          style={{ cursor: 'pointer' }}
+        />
       </div>
     </div>
   );
