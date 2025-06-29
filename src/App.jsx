@@ -1,12 +1,11 @@
 import { useState, useRef } from 'react';
 import './App.css';
-import './css/vqm-porfolio.css';
-import logo1 from './css/VQM-logo-1.png';
-import logo2 from './css/VQM-logo-2.png';
-import logo3 from './css/vqm-logo-3.png';
-import avatar1 from './css/vqm-avatar-1.png';
-import avatar2 from './css/vqm-avatar-2.png';
-import avatar3 from './css/vqm-avatar-3.png';
+import logo1 from './assets/VQM-logo-1.png';
+import logo2 from './assets/VQM-logo-2.png';
+import logo3 from './assets/vqm-logo-3.png';
+import avatar1 from './assets/vqm-avatar-1.png';
+import avatar2 from './assets/vqm-avatar-2.png';
+import avatar3 from './assets/vqm-avatar-3.png';
 import { SiGmail, SiLinkedin, SiGithub } from "react-icons/si";
 import ColorSwitcher from './ColorSwitcher'; // Import the new component
 import resumePDF from './assets/Resume-VuongQuyenMai-Jan2025-green.pdf'; // Import the PDF file
